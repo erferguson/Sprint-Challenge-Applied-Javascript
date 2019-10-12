@@ -19,12 +19,12 @@ function Header() {
     const newH1 = document.createElement('h1');
     const newTemp = document.createElement('span');
 
-    newH1.classList.add('.header');
-    newDate.classList.add('.date');
-    newTemp.classList.add('.temp');
+    newDate.classList.add('date');
+    newH1.classList.add('header');
+    newTemp.classList.add('temp');
 
     newDate.textContent = 'SMARCH 28, 2019';
-    newDate.textContent = 'Lambda Times';
+    newH1.textContent = 'Lambda Times';
     newTemp.textContent = '98°';
 
     newHeader.appendChild(newDate);

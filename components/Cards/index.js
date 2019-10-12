@@ -24,7 +24,9 @@ axios
     .get('https://lambda-times-backend.herokuapp.com/articles')
 
     .then((response) => {
-        blank.forEach (x => {
+        const responseData = Object.keys(response.data.articles);
+
+        responseData.forEach (x => {
             response.data.articles[i].forEach(item => {
                 sectionArticle.appendChild(Article(item))
             })
