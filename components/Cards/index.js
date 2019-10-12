@@ -29,8 +29,8 @@ axios
         responseData.forEach (x => {
             response.data.articles[x].forEach(item => {
                 sectionArticle.appendChild(Article(item));
-            })
-        })
+            });
+        });
     })
 
     .catch(error => {
@@ -38,17 +38,17 @@ axios
     })
 
     function Article(item){
-        const newCard = document.createElement('div')
-        const newHeadline = document.createElement('div')
-        const newAuthor = document.createElement('div')
-            const imgContainer = document.createElement('div')
-            const newImg = document.createElement('img')
-        const authorName = document.createElement('span')
+        const newCard = document.createElement('div');
+        const newHeadline = document.createElement('div');
+        const newAuthor = document.createElement('div');
+        const imgContainer = document.createElement('div');
+        const newImg = document.createElement('img');
+        const authorName = document.createElement('span');
 
-        newCard.classList.add('.card')
-        newHeadline.classList.add('.headline')
-        newAuthor.classList.add('.author')
-        imgContainer.classList.add('.img-container')
+        newCard.classList.add('card')
+        newHeadline.classList.add('headline')
+        newAuthor.classList.add('author')
+        imgContainer.classList.add('img-container')
 
         newImg.src = item.authorPhoto
         newHeadline.textContent = item.headline

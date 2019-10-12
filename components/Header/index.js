@@ -11,7 +11,7 @@
 
 const headerCreator = document.querySelector('.header-container');
 
-headerCreator.appendChild(Header());
+headerCreator.appendChild(Header())
 
 function Header() {
     const newHeader = document.createElement('div');// must be returned, main Div
@@ -19,8 +19,8 @@ function Header() {
     const newH1 = document.createElement('h1');
     const newTemp = document.createElement('span');
 
+    newHeader.classList.add('header');
     newDate.classList.add('date');
-    newH1.classList.add('header');
     newTemp.classList.add('temp');
 
     newDate.textContent = 'SMARCH 28, 2019';
