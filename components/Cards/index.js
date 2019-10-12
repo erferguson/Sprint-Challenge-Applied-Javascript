@@ -23,7 +23,13 @@ const sectionArticle = document.querySelector('.cards-container')
 axios 
     .get('https://lambda-times-backend.herokuapp.com/articles')
 
-    .then()
+    .then((response) => {
+        blank.forEach (x => {
+            response.data.articles[i].forEach(item => {
+                sectionArticle.appendChild(Article(item))
+            })
+        })
+    })
 
     .catch(error => {
         console.log('error, oh to error', error)
