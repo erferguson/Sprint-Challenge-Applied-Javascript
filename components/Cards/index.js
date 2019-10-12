@@ -27,8 +27,8 @@ axios
         const responseData = Object.keys(response.data.articles);
 
         responseData.forEach (x => {
-            response.data.articles[i].forEach(item => {
-                sectionArticle.appendChild(Article(item))
+            response.data.articles[x].forEach(item => {
+                sectionArticle.appendChild(Article(item));
             })
         })
     })

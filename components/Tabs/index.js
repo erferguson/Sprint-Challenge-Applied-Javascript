@@ -18,8 +18,8 @@ axios
 
         response.data.topics.forEach(item => {
             const newTab = document.createElement('div');
-            newTab.classList.add('tab')
-            newTab.textContent = item
+            newTab.classList.add('tab');
+            newTab.textContent = item;
             componentCreator.appendChild(newTab)
         })
     })
