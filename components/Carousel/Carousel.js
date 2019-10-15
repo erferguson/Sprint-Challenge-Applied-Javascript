@@ -7,23 +7,23 @@
     6. Have fun!
 */
 
-function carouselCreator (){
-  const carousel = document.createElement('div')
-  const buttonL = document.createElement('div')
-  const img1 = document.createElement('img')
-  const img2 = document.createElement('img')
-  const img3 = document.createElement('img')
-  const img4 = document.createElement('img')
-  const buttonR = document.createElement('div')
+// function carouselCreator (){
+//   const carousel = document.createElement('div')
+//   const buttonL = document.createElement('div')
+//   const img1 = document.createElement('img')
+//   const img2 = document.createElement('img')
+//   const img3 = document.createElement('img')
+//   const img4 = document.createElement('img')
+//   const buttonR = document.createElement('div')
 
-  carousel.classList.add('carousel')
-  buttonL.classList.add('left-button')
-  buttonR.classList.add('right-button')
+//   carousel.classList.add('carousel')
+//   buttonL.classList.add('left-button')
+//   buttonR.classList.add('right-button')
 
-  img1.src = 
+//   img1.src = 
 
-  return 
-}
+//   return 
+// }
 
 /* HTML:
   <div class="carousel">
